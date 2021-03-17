@@ -1,0 +1,12 @@
+.text-animation{
+    animation: moving 70s linear infinite;
+}
+
+@keyframes moving {
+    0%{
+        background-position: 0% 30%;
+    }
+    100%{
+        background-position: 100% 50%;
+    }
+}

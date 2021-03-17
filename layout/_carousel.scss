@@ -1,0 +1,46 @@
+.carousel{
+    width: 100vw;
+    height: 80vh;
+    margin: 0;
+    
+    &-item{
+        background:#131313 ;
+        background-size: cover;
+    }
+    & img{
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+        opacity: 0.5;
+    }
+    &-caption{
+        & h1{
+            position: relative;
+            transform: translateY(-300%);
+            background:url('../../img/text-anim-1.png');
+
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            // color: yellow;
+            @include respond(phone){
+                transform: translateY(-250%);
+                font-size: 4rem; 
+            }
+        }
+        & p{
+            font-size: 1.4rem;
+            line-height: 1;
+            letter-spacing: 0;
+        }
+        & .btn-dark{
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            padding: 1rem;
+            position: relative;
+            transform: translateY(-100%);
+            background-color: $color-secondary;
+        }
+        
+    }
+}

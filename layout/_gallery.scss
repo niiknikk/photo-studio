@@ -1,0 +1,21 @@
+.gallery{
+    width: 90vw;
+    margin: 0 auto;
+}
+.items{
+    width: 100%;
+    // margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    @include respond(tab-phone){
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
+    & img{
+        width: 100%;
+        height: 30rem;
+        object-fit: cover;
+    }
+}
