@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@400;500&family=Source+Sans+Pro:wght@300;400;600&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  font-size: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  width: 100vw;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.heading-primary {
+  position: relative;
+  font-size: 5rem;
+  color: #101d2c;
+}
+
+@media only screen and (max-width: 75em) {
+  .heading-primary {
+    font-size: 4.5rem;
+  }
+}
+
+.heading-secondary {
+  position: relative;
+  font-size: 3.5rem;
+  color: #101d2c;
+  margin: 1rem 0rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 75em) {
+  .heading-secondary {
+    font-size: 3rem;
+  }
+}
+
+.text-paragraph {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #333;
+  font-family: "Lato", sans-serif;
+}
+
+.text-animation {
+  -webkit-animation: moving 70s linear infinite;
+          animation: moving 70s linear infinite;
+}
+
+@-webkit-keyframes moving {
+  0% {
+    background-position: 0% 30%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes moving {
+  0% {
+    background-position: 0% 30%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.btn {
+  font-family: "Poppins", sans-serif;
+}
+
+.carousel {
+  width: 100vw;
+  height: 80vh;
+  margin: 0;
+}
+
+.carousel-item {
+  background: #131313;
+  background-size: cover;
+}
+
+.carousel img {
+  width: 100%;
+  height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.5;
+}
+
+.carousel-caption h1 {
+  position: relative;
+  -webkit-transform: translateY(-300%);
+          transform: translateY(-300%);
+  background: url("../../img/text-anim-1.png");
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .carousel-caption h1 {
+    -webkit-transform: translateY(-250%);
+            transform: translateY(-250%);
+    font-size: 4rem;
+  }
+}
+
+.carousel-caption p {
+  font-size: 1.4rem;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.carousel-caption .btn-dark {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  padding: 1rem;
+  position: relative;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  background-color: #101d2c;
+}
+
+.section-about {
+  width: 80vw;
+  margin: 2rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section-about {
+    width: 95vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.section-about-img {
+  background-color: #101d2c;
+  padding-right: 3rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section-about-img {
+    padding-right: 0;
+    width: 80%;
+  }
+}
+
+.section-about-img img {
+  opacity: .7;
+  width: 50rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section-about-img img {
+    width: 100%;
+  }
+}
+
+.section-about-content {
+  padding: 1rem 2rem;
+  background-color: #f0f0f0;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section-about-content {
+    margin-top: 2rem;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section-about-content {
+    width: 90%;
+  }
+}
+
+.section-about-content p {
+  margin: 1rem 2rem;
+}
+
+.gallery {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.items {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.items img {
+  width: 100%;
+  height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
